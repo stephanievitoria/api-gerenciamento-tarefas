@@ -17,10 +17,10 @@ O projeto segue arquitetura em camadas e implementa operações CRUD completas, 
 
 O projeto segue uma arquitetura em camadas:
 
-controller → responsável pelos endpoints da API
-service → contém a lógica de negócio
-repository → acesso ao banco de dados
-model → entidades da aplicação
+- **controller** → responsável pelos endpoints da API  
+- **service** → contém a lógica de negócio  
+- **repository** → acesso ao banco de dados  
+- **model** → entidades da aplicação
 
 Estrutura de pacotes:
 
