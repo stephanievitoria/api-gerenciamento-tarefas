@@ -1,5 +1,6 @@
 package com.stephanie.taskmanager.controller;
 
+import com.stephanie.taskmanager.dto.ApiResponse;
 import com.stephanie.taskmanager.model.Tarefa;
 import com.stephanie.taskmanager.service.TarefaService;
 import org.springframework.web.bind.annotation.*;
@@ -17,22 +18,30 @@ public class TarefaController {
     }
 
     @GetMapping
-    public List<Tarefa> listar() {
-        return service.listarTarefas();
+    public ApiResponse<List<Tarefa>> listar() {
+        List<Tarefa> tarefas = service.listarTarefas();
+
+        return new ApiResponse<>("Tarefas listadas com sucesso", tarefas);
     }
 
     @PostMapping
-    public Tarefa criar(@RequestBody Tarefa tarefa) {
-        return service.criarTarefa(tarefa);
+    public ApiResponse<Tarefa> criar(@RequestBody Tarefa tarefa) {
+        Tarefa novaTarefa = service.criarTarefa(tarefa);
+
+        return new ApiResponse<>("Tarefa criada com sucesso", novaTarefa);
     }
 
     @PutMapping("/{id}")
-    public Tarefa atualizar(@PathVariable Long id, @RequestBody Tarefa tarefa) {
-        return service.atualizarTarefa(id, tarefa);
+    public ApiResponse<Tarefa> atualizar(@PathVariable Long id, @RequestBody Tarefa tarefa) {
+        Tarefa tarefaAtualizada = service.atualizarTarefa(id, tarefa);
+
+        return new ApiResponse<>("Tarefa atualizada com sucesso", tarefaAtualizada);
     }
 
     @DeleteMapping("/{id}")
-    public void deletar(@PathVariable Long id) {
+    public ApiResponse<String> deletar(@PathVariable Long id) {
         service.deletarTarefa(id);
+
+        return new ApiResponse<>("Tarefa deletada com sucesso", null);
     }
 }
