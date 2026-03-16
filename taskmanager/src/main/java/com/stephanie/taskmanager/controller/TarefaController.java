@@ -24,6 +24,17 @@ public class TarefaController {
         return new ApiResponse<>("Tarefas listadas com sucesso", tarefas);
     }
 
+    @GetMapping("/{id}")
+    public ApiResponse<Tarefa> buscarPorId(@PathVariable Long id) {
+
+        Tarefa tarefa = service.buscarPorId(id);
+
+        return new ApiResponse<>(
+                "Tarefa encontrada com sucesso",
+                tarefa
+        );
+    }
+
     @PostMapping
     public ApiResponse<Tarefa> criar(@RequestBody Tarefa tarefa) {
         Tarefa novaTarefa = service.criarTarefa(tarefa);

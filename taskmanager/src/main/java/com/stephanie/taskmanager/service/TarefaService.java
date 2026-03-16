@@ -19,6 +19,12 @@ public class TarefaService {
         return repository.findAll();
     }
 
+    public Tarefa buscarPorId(Long id) {
+
+        return repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Tarefa não encontrada"));
+    }
+
     public Tarefa criarTarefa(Tarefa tarefa) {
         return repository.save(tarefa);
     }
