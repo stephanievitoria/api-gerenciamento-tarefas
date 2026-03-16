@@ -132,4 +132,6 @@ Os testes utilizam:
 
 ## Autor
 
+**Stephanie Vitoria Soares da Cruz**
+
 Projeto desenvolvido para fins de estudo e portfólio.
