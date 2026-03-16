@@ -79,19 +79,19 @@ Body:
 
 ## Testando a API
 ### Criando uma tarefa (POST)
-![Criar tarefa](docs/images/criar-tarefa.png)
+![Criar tarefa](docs/imagens-api-tarefas/criar-tarefa.png)
 
 ### Listando tarefas (GET)
-![Listar tarefa](docs/images/listar-tarefas.png)
+![Listar tarefa](docs/imagens-api-tarefas/listar-tarefas.png)
 
 ### Buscando tarefa por ID (GET)
-![Buscar tarefa por ID](docs/images/buscar-tarefas.png)
+![Buscar tarefa por ID](docs/imagens-api-tarefas/buscar-tarefas.png)
 
 ### Atualizando uma tarefa (PUT)
-![Criar tarefa](docs/images/atualizar-tarefa.png)
+![Criar tarefa](docs/imagens-api-tarefas/atualizar-tarefa.png)
 
 ### Removendo uma tarefa (DELETE)
-![Remover tarefa](docs/images/deletar-tarefa.png)
+![Remover tarefa](docs/imagens-api-tarefas/deletar-tarefa.png)
 
 ## Executando o projeto
 
