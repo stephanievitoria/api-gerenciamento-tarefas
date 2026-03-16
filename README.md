@@ -77,6 +77,22 @@ Body:
 "concluida": false
 }
 
+## Testando a API
+### Criando uma tarefa (POST)
+![Criar tarefa](docs/images/criar-tarefa.png)
+
+### Listando tarefas (GET)
+![Listar tarefa](docs/images/listar-tarefas.png)
+
+### Buscando tarefa por ID (GET)
+![Buscar tarefa por ID](docs/images/buscar-tarefas.png)
+
+### Atualizando uma tarefa (PUT)
+![Criar tarefa](docs/images/atualizar-tarefa.png)
+
+### Removendo uma tarefa (DELETE)
+![Remover tarefa](docs/images/deletar-tarefa.png)
+
 ## Executando o projeto
 
 1. Clone o repositório
@@ -93,7 +109,7 @@ ou pela IDE (IntelliJ / Eclipse).
 
 A API estará disponível em:
 
-http://localhost:8080/tarefas
+http://localhost:8081/tarefas
 
 ## Banco de dados
 
@@ -101,7 +117,7 @@ O projeto utiliza **H2 Database** em memória para facilitar a execução.
 
 Console do H2 disponível em:
 
-http://localhost:8080/h2-console
+http://localhost:8081/h2-console
 
 ## Executando os testes
 
